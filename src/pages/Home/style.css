@@ -1,0 +1,40 @@
+#area-carrosel-model {
+    position: relative;
+    width: 100%;
+    max-Width: 500px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-left-home  {
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-Radius: 50%;
+    z-Index: 10;
+    font-Size: 20px;
+    display: flex;
+    align-Items: center;
+    justify-Content: center;
+    left: 10px;
+}
+.btn-rigth-home {
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-Radius: 50%;
+    z-Index: 10;
+    font-Size: 20px;
+    display: flex;
+    align-Items: center;
+    justify-Content: center;
+    right: 10px;
+}
