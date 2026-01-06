@@ -1,3 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#section-body-inicio{
+    background-color: #00ffff;
+}
+a{
+    text-decoration: none;
+}
+.list-menu-home{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 80px;
+}
+#area-logo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.btn-menu-home{
+    
+}
+.list-menu-home li{
+    margin-top: 10px;
+}
+.logo-menu-home{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 10px;
+    padding-top: 10px;
+}
+
+
+
+
 #area-carrosel-model {
     position: relative;
     width: 100%;

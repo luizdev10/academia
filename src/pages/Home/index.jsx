@@ -1,6 +1,7 @@
 import "./style.css";
 import minhaImg from "../../assets/img/logo.png";
 import foto1 from "../../assets/img/foto1.png";
+import { Dumbbell, Leaf, Activity, MapPinIcon, Phone, MailCheck, User, BookOpen, House, TableOfContents } from 'lucide-react';
 //import foto2 from "../../assets/img/logo.png";
 //import foto3 from "../../assets/img/logo.png";
 import { useState } from "react";
@@ -16,18 +17,25 @@ function Home() {
     const anterior = () => {
         setIndice((prev) => (prev === 0 ? fotos.length - 1 : prev - 1));
     };
-    return (
-        <div id="section-body">
-            <nav>
-                <div id="area-logo">
 
-                    <p>Saulo Fitness</p>
+    const menu = ()=> {
+        
+    }
+    return (
+        <div id="section-body-inicio">
+            <nav id="barra-nav-home">
+                <div className="logo-menu-home">
+                    <div id="area-logo">
+                        <p>Saulo Fitness</p>
+                    </div>
+                    <TableOfContents color="black" size={40} />
                 </div>
+
                 <div>
-                    <ul>
-                        <li><a href="">INICIO</a></li>
+                    <ul className="list-menu-home active">
+                        <li><a href=""><House color="black" size={15} />  INICIO</a></li>
                         <li><a href="">CONTATO</a></li>
-                        <li><a href="">PLANOS</a></li>
+                        <li><a href=""><BookOpen color="black" size={15} />  PLANOS</a></li>
                     </ul>
                 </div>
             </nav>
@@ -68,23 +76,42 @@ function Home() {
 
 
                 <div className="sobre-texto">
-                    <h2>SOBRE ELE</h2>
+                    <h2><User color="black" size={20} />  SOBRE ELE</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste cumque repudiandae, consequatur commodi amet labore illum perferendis dicta, corporis vero delectus sed? Quasi nam aliquid necessitatibus, facere eos ab cum.</p>
                 </div>
             </div>
 
             <div id="section-home-servicos">
                 <div id="musculacao-home">
-                        <h2>MUSCULAÇÃO</h2>
-                        <p>Force seus limites e construa o corpo dos seus sonhos.</p>
+                    <h2 style={{ display: "flex", alignItems: "center", gap: "6px" }}><Dumbbell color="black" size={20} /> MUSCULAÇÃO</h2>
+                    <p>Force seus limites e construa o corpo dos seus sonhos.</p>
                 </div>
                 <div id="perda-peso-home">
-                        <h2>PERDA DE PESO</h2>
-                        <p>Queime calorias, acelere seu metabolismo e conquiste o peso ideal.</p>
+                    <h2><Leaf color="black" size={20} />  PERDA DE PESO</h2>
+                    <p>Queime calorias, acelere seu metabolismo e conquiste o peso ideal.</p>
                 </div>
                 <div id="rebilitacao-home">
-                        <h2>REABILITAÇÃO</h2>
-                        <p>Recupere-se com segurança e volte mais forte</p>
+                    <h2><Activity color="black" size={20} />  REABILITAÇÃO</h2>
+                    <p>Recupere-se com segurança e volte mais forte</p>
+                </div>
+            </div>
+            <div id="section-footer-home">
+                <h2>O único treino ruim é o
+                    treino que não aconteceu.</h2>
+                <div className="espaco-dados-home">
+                    <div>
+
+                        <p><MapPinIcon color="black" size={14} />ENDEREÇO</p>
+                        <p>endereco ficticio n°1232312</p>
+                    </div>
+                    <div>
+                        <p><Phone color="black" size={14} /> TELEFONE</p>
+                        <p>88988853140</p>
+                    </div>
+                    <div>
+                        <p><MailCheck color="black" size={14} /> E-MAIL</p>
+                        <p>EXEMPLOQUALQUER@GMIAL.COM</p>
+                    </div>
                 </div>
             </div>
         </div>
