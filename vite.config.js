@@ -7,5 +7,8 @@ export default defineConfig({
   base: "/academia/",
   build: {
     outDir: 'docs'
+  },
+  define: {
+    'process.env': {} // Evita erros de variáveis de ambiente não definidas
   }
 })
