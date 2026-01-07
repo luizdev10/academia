@@ -2,39 +2,45 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
-#section-body-inicio{
-    background-color: #00ffff;
-}
+
 a{
     text-decoration: none;
+    color: black;
 }
 .list-menu-home{
     list-style: none;
-    display: flex;
+    display: none;
     flex-direction: column;
-    align-items: end;
-    margin-right: 80px;
+    align-items: center;
+}
+.list-menu-home.active{
+    display: flex;
+    bottom: 40px;
 }
 #area-logo{
     display: flex;
-    text-align: center;
     align-items: center;
 }
-.btn-menu-home{
-    
+.img-logo-home{
+    width: 60px;
+    margin-right: 10px;
 }
+
 .list-menu-home li{
     margin-top: 10px;
 }
 .logo-menu-home{
     display: flex;
     justify-content: space-between;
-    margin: auto 10px;
-    padding-top: 10px;
+    margin: auto;
+    max-width: 100vw;
 }
-
+#bar-nav-home{
+    background-color: rgb(255, 255, 0);
+}
 
 
 
