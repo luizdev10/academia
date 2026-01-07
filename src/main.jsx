@@ -7,12 +7,8 @@ import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Home />
-  </StrictMode>,
-
-<React.StrictMode>
     <BrowserRouter basename="/academia">
       <Home />
     </BrowserRouter>
-  </React.StrictMode>
+  </StrictMode>
 )
