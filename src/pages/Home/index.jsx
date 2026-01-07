@@ -1,9 +1,9 @@
 import "./style.css";
 import minhaImg from "../../assets/img/logo.png";
 import foto1 from "../../assets/img/foto1.png";
-import { Dumbbell, Leaf, Activity, MapPinIcon, Phone, MailCheck, User, BookOpen, House, X, TableOfContents } from 'lucide-react';
 //import foto2 from "../../assets/img/logo.png";
 //import foto3 from "../../assets/img/logo.png";
+import { Dumbbell, Leaf, Activity, MapPinIcon, Phone, MailCheck, User, BookOpen, House, X, TableOfContents } from 'lucide-react';
 import { useState } from "react";
 
 function Home() {
@@ -30,7 +30,7 @@ function Home() {
                     </div>
                     <div onClick={() => setMenuAberto(!menuAberto)} style={{ cursor: 'pointer' }}>
                         {menuAberto ? (
-                            <X color="black" size={40} />
+                            <X color="black" size={40}/>
                         ) : (
                             <TableOfContents color="black" size={40} />
                             
