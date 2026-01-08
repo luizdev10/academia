@@ -6,7 +6,7 @@ import foto1 from "../../assets/img/foto1.png";
 import { Dumbbell, Leaf, Activity, MapPinIcon, Phone, MailCheck, User, BookOpen, House, X, TableOfContents } from 'lucide-react';
 import { useState } from "react";
 
-function Home() {
+function HomeNavBar() {
     const fotos = [foto1, minhaImg];
 
     const [indice, setIndice] = useState(0);
@@ -21,7 +21,7 @@ function Home() {
     const [menuAberto, setMenuAberto] = useState(false)
     
     return (
-        <div id="section-body-inicio">
+        <section id="section-body-inicio">
             <nav id="barra-nav-home">
                 <div className="logo-menu-home">
                     <div id="area-logo">
@@ -121,8 +121,8 @@ function Home() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
-export default Home
+export default HomeNavBar
