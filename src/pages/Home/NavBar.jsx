@@ -19,30 +19,30 @@ function HomeNavBar() {
     };
 
     const [menuAberto, setMenuAberto] = useState(false)
-    
+
     return (
         <section id="section-body-inicio">
             <nav id="barra-nav-home">
                 <div className="logo-menu-home">
                     <div id="area-logo">
-                        <img src={minhaImg} alt="" className="img-logo-home"/>
+                        <img src={minhaImg} alt="" className="img-logo-home" />
                         <p>Saulo Fitness</p>
-                    </div>
-                    <div onClick={() => setMenuAberto(!menuAberto)} style={{ cursor: 'pointer' }}>
-                        {menuAberto ? (
-                            <X color="black" size={40}/>
-                        ) : (
-                            <TableOfContents color="black" size={40} />
-                            
-                        )}
+
+                        <div onClick={() => setMenuAberto(!menuAberto)} >
+                            {menuAberto ? (
+                                <X color="black" size={40} />
+                            ) : (
+                                <TableOfContents color="black" size={40} />
+                            )}
+                        </div>
                     </div>
                 </div>
 
-                <div>
-                    <ul className={`list-menu-home ${menuAberto ? "active": ""}`}>
-                        <li><a href=""><House color="black" size={15} />  INICIO</a></li>
+                <div className=" area-li">
+                    <ul className={`list-menu-home ${menuAberto ? "active" : ""}`}>
+                        <li><House color="black" size={15} /><a href="">  INICIO</a></li>
                         <li><a href="">CONTATO</a></li>
-                        <li><a href=""><BookOpen color="black" size={15} />  PLANOS</a></li>
+                        <li><BookOpen color="black" size={15} /><a href="">  PLANOS</a></li>
                     </ul>
                 </div>
             </nav>

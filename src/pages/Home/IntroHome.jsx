@@ -1,11 +1,9 @@
 
-
-
 function IntroHome() {
 
     return (
         <section id="section-inicio">
-            <h1>PROPORCIONANDO SAÚDE E BEM ESTAR</h1>
+            <h1 className="text-4xl w-full">PROPORCIONANDO SAÚDE E BEM ESTAR</h1>
         </section>
     )
 }
