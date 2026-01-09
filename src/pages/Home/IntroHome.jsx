@@ -1,9 +1,9 @@
-
+import fotoIntro from "../../assets/img/fotointro.png"
 function IntroHome() {
 
     return (
-        <section id="section-inicio">
-            <h1 className="text-4xl w-full">PROPORCIONANDO SAÚDE E BEM ESTAR</h1>
+        <section style={{ backgroundImage: `url(${fotoIntro})` }} className="h-screen flex items-end bg-cover bg-center bg-no-repeat  ">
+            <h1 className="text-4xl w-full text-orange-400 font-bold p-2">PROPORCIONANDO SAÚDE E BEM ESTAR</h1>
         </section>
     )
 }

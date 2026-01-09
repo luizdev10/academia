@@ -4,7 +4,8 @@ import tailwindcss from '@tailwindcss/vite'
 
 
 export default defineConfig({
-  plugins: [react({jsxRuntime: 'automatic'}), tailwindcss()],
+  plugins: [react({jsxRuntime: 'automatic'}),
+     tailwindcss()],
   base: "/academia/",
   build: {
     outDir: 'docs'
