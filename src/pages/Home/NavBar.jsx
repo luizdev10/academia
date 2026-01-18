@@ -25,14 +25,14 @@ function HomeNavBar() {
             <nav id="barra-nav-home">
                 <div className="logo-menu-home">
                     <div id="area-logo">
-                        <img src={minhaImg} alt="" className="img-logo-home" />
+                        <img src={minhaImg} alt="" className="img-logo-home ml-4" />
                         <p>Saulo Fitness</p>
 
                         <div onClick={() => setMenuAberto(!menuAberto)} >
                             {menuAberto ? (
                                 <X color="black" size={40} />
                             ) : (
-                                <TableOfContents color="black" size={40} />
+                                <TableOfContents color="black" size={40} className="mr-4" />
                             )}
                         </div>
                     </div>
