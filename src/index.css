@@ -1,12 +1,17 @@
 @import "tailwindcss";
-
+@plugin "daisyui";
 
 html {
     width: 100%;
     font-family: Inter;
 }
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
 
 a {
     text-decoration: none;
-    color: black;
 }

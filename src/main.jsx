@@ -7,6 +7,7 @@ import HomeNavBar from './pages/Home/NavBar.jsx';
 import IntroHome from './pages/Home/IntroHome.jsx';
 import Atividades from './pages/Home/Atividades.jsx';
 import Footer from './pages/Home/Footer.jsx';
+import Contato from './pages/Home/Contato.jsx'
 
 
 
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
       <HomeNavBar />
       <IntroHome />
       <Atividades />
+      <Contato />
       <Footer />
     </BrowserRouter>
   </StrictMode>

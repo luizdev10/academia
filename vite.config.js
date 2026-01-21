@@ -1,16 +1,23 @@
+import path from "path"
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-
 export default defineConfig({
-  plugins: [react({jsxRuntime: 'automatic'}),
-     tailwindcss()],
+  plugins: [
+    react({ jsxRuntime: 'automatic' }),
+    tailwindcss(), // O Tailwind v4 já cuida de carregar os plugins que estão no CSS
+  ],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
   base: "/academia/",
   build: {
     outDir: 'docs'
   },
   define: {
-    'process.env': {} // Evita erros de variáveis de ambiente não definidas
+    'process.env': {} 
   }
 })
