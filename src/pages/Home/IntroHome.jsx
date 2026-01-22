@@ -7,7 +7,7 @@ function IntroHome() {
       style={{ backgroundImage: `url(${fotoIntro})` }}
     >
 
-      <div className="absolute inset-0 bg-black/50 bg-gradient-to-r from-black/80 to-transparent"></div>
+      <div className=" h-screen absolute inset-0 bg-black/50 bg-gradient-to-r from-black/80 to-transparent"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-2xl">

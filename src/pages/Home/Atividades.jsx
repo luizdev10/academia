@@ -60,11 +60,6 @@ function Atividades() {
               <p className="mt-3 text-zinc-600 font-medium leading-relaxed max-w-250px">
                 {item.desc}
               </p>
-
-             
-              <button className="mt-4 text-orange-600 font-bold text-sm uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Ver Detalhes +
-              </button>
             </div>
           ))}
         </div>
