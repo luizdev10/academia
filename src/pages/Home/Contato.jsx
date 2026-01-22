@@ -11,7 +11,7 @@ function Contato() {
     },
     {
       nome: "Instagram",
-      icon: <Instagram size={20} />,
+      icon: <Instagram size={25} />,
       link: "https://instagram.com/seu_perfil",
       // Usando aquele gradiente do Instagram que criamos!
       corHover: "hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:border-transparent",
@@ -45,7 +45,7 @@ function Contato() {
             target="_blank"
             rel="noreferrer"
             className={`
-              btn btn-outline btn-lg min-w-[160px] flex items-center gap-3 
+              btn btn-outline btn-lg min-w-160px flex items-center gap-3 
               transition-all duration-300 font-bold uppercase tracking-widest
               hover:text-white rounded-xl shadow-lg
               ${item.estilo} ${item.corHover}

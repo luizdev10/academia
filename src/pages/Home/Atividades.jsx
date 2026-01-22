@@ -57,7 +57,7 @@ function Atividades() {
                 {item.titulo}
               </h3>
               
-              <p className="mt-3 text-zinc-600 font-medium leading-relaxed max-w-[250px]">
+              <p className="mt-3 text-zinc-600 font-medium leading-relaxed max-w-250px">
                 {item.desc}
               </p>
 
