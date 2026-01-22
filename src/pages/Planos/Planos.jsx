@@ -1,10 +1,12 @@
+import Horario from "./horario" 
+
 function Planos() {
 
     const listaPlano = [
         {
             periodo: "Mensal",
             status: "Mais Popular",
-            preco: "R$ 70",
+            preco: "R$ 75",
             corBorda: "border-orange-500",
             corBotao: "bg-orange-500",
             corTexto: "text-orange-500"
@@ -61,6 +63,7 @@ function Planos() {
                     })}
                 </div>
             </div>
+            <Horario />
         </section>
     );
 }
