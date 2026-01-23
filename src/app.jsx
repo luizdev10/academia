@@ -7,6 +7,7 @@ import Contato from "./pages/Home/Contato";
 import Planos from "./pages/Planos/Planos";
 
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -28,9 +29,8 @@ function App() {
           } />
 
           <Route path="/planos" element={<Planos />} />
-
-
-
+        
+      
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
 

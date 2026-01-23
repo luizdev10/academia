@@ -1,4 +1,5 @@
-import Horario from "./horario"
+import Horario from "./horario";
+import FAQ from "./Faq"
 
 function Planos() {
 
@@ -80,6 +81,7 @@ function Planos() {
                 </div>
             </div>
             <Horario />
+            <FAQ />
         </section>
     );
 }

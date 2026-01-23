@@ -56,7 +56,7 @@ function HomeNavBar() {
     const navLinks = [
         { name: "INÍCIO", icon: <House size={18} />, to: "/#home" },
         { name: "PLANOS", icon: <BookOpen size={18} />, to: "/planos" },
-        { name: "CONTATO", icon: <Phone size={18} />, to: "/#contato" },
+        { name: "CONTATO", icon: <Phone size={18} />, to: "/#contato" }
     ];
 
     return (
@@ -79,7 +79,7 @@ function HomeNavBar() {
                             <Link
                                 to={link.to}
                                 onClick={(e) => handleNavigation(e, link.to)}
-                                className="flex items-center gap-2 text-sm font-bold text-white hover:text-orange-500 transition-colors uppercase tracking-widest"
+                                className={`flex items-center gap-2 text-sm font-bold ${link.cor} hover:text-orange-500 transition-colors uppercase tracking-widest`}
                             >
                                 {link.icon} {link.name}
                             </Link>
