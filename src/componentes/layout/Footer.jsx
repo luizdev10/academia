@@ -10,7 +10,7 @@ function Footer() {
       
           <div className="flex flex-col items-center md:items-start">
             <div className="flex items-center gap-3 mb-4">
-              <img src={minhaImg} alt="Logo" className="h-10 w-auto opacity-80" />
+              <img src={minhaImg} alt="Logo" className="h-10 w-auto opacity-80 rounded" />
               <h2 className="text-white font-black text-xl uppercase italic tracking-tighter">
                 Saulo <span className="text-orange-600">Fitness</span>
               </h2>

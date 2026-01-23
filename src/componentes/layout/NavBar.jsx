@@ -54,7 +54,7 @@ function HomeNavBar() {
     };
 
     const navLinks = [
-        { name: "INÍCIO", icon: <House size={18} />, to: "/" },
+        { name: "INÍCIO", icon: <House size={18} />, to: "/#home" },
         { name: "PLANOS", icon: <BookOpen size={18} />, to: "/planos" },
         { name: "CONTATO", icon: <Phone size={18} />, to: "/#contato" },
     ];

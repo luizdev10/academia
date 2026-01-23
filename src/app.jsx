@@ -12,21 +12,23 @@ function App() {
     <BrowserRouter>
       <div className="w-full min-h-screen bg-zinc-950">
         <NavBar />
-        
+
         <Routes>
-       
+
           <Route path="/" element={
             <main className="flex flex-col">
-              <IntroHome />
+              <div id="home">
+                <IntroHome />
+              </div>
               <Atividades />
               <div id='contato'>
-              <Contato />
+                <Contato />
               </div>
             </main>
           } />
 
           <Route path="/planos" element={<Planos />} />
-          
+
 
 
           <Route path="*" element={<Navigate to="/" />} />

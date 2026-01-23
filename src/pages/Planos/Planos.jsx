@@ -1,4 +1,4 @@
-import Horario from "./horario" 
+import Horario from "./horario"
 
 function Planos() {
 
@@ -9,7 +9,8 @@ function Planos() {
             preco: "R$ 75",
             corBorda: "border-orange-500",
             corBotao: "bg-orange-500",
-            corTexto: "text-orange-500"
+            corTexto: "text-orange-500",
+            beneficios: ["30 Dias de acesso", "Acesso total", "Avaliação Fisica","Gypass"]
         },
         {
             periodo: "Quinzenal",
@@ -17,7 +18,8 @@ function Planos() {
             preco: "R$ 40",
             corBorda: "border-green-500",
             corBotao: "bg-green-500",
-            corTexto: "text-green-500"
+            corTexto: "text-green-500",
+            beneficios: ["15 Dias de acesso", "Acesso total", "Avaliação Fisica","","",""]
         },
         {
             periodo: "Semanal",
@@ -25,7 +27,8 @@ function Planos() {
             preco: "R$ 30",
             corBorda: "border-blue-500",
             corBotao: "bg-blue-500",
-            corTexto: "text-blue-500"
+            corTexto: "text-blue-500",
+            beneficios: ["7 Dias de acesso", "Acesso total","","","","","",""]
         }
     ];
     return (
@@ -48,11 +51,24 @@ function Planos() {
                                     <span className={`badge badge-xs uppercase ${item.corBotao} font-bold`}>{item.status}</span>
                                     <div className="flex justify-between items-center">
                                         <h2 className={`text-3xl font-bold italic uppercase ${item.corTexto}`}>{item.periodo}</h2>
-                                        <span className={`text-xl `}>{item.preco}</span>
+                                        <span className={`text-xl`}>{item.preco}</span>
                                     </div>
 
                                     <ul className="mt-6 flex flex-col gap-2 text-xs">
-
+                                        {item.beneficios.map((beneficio, id) => {
+                                            return (
+                                                beneficio === "" ? (
+                                                    <li key={id}>
+                                                        <span>{beneficio}</span>
+                                                    </li>
+                                                ) : (
+                                                    <li key={id}>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                                                        <span>{beneficio}</span>
+                                                    </li>
+                                                )
+                                            )
+                                        })}
                                     </ul>
                                     <div className="mt-6">
                                         <button className={`btn  btn-block ${item.corBotao} uppercase italic font-black`}>Comprar</button>
