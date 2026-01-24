@@ -11,7 +11,7 @@ function Planos() {
             corBorda: "border-orange-500",
             corBotao: "bg-orange-500",
             corTexto: "text-orange-500",
-            beneficios: ["30 Dias de acesso", "Acesso total", "Avaliação Fisica","Gympass"]
+            beneficios: ["30 Dias de acesso", "Acesso total", "Avaliação Fisica", "Gympass"]
         },
         {
             periodo: "Quinzenal",
@@ -20,7 +20,7 @@ function Planos() {
             corBorda: "border-green-500",
             corBotao: "bg-green-500",
             corTexto: "text-green-500",
-            beneficios: ["15 Dias de acesso", "Acesso total", "Avaliação Fisica","","",""]
+            beneficios: ["15 Dias de acesso", "Acesso total", "Avaliação Fisica", "", "", ""]
         },
         {
             periodo: "Semanal",
@@ -29,7 +29,7 @@ function Planos() {
             corBorda: "border-blue-500",
             corBotao: "bg-blue-500",
             corTexto: "text-blue-500",
-            beneficios: ["7 Dias de acesso", "Acesso total","","","","","",""]
+            beneficios: ["7 Dias de acesso", "Acesso total", "", "", "", "", "", ""]
         }
     ];
     return (
@@ -72,7 +72,16 @@ function Planos() {
                                         })}
                                     </ul>
                                     <div className="mt-6">
-                                        <button className={`btn  btn-block ${item.corBotao} uppercase italic font-black`}>Comprar</button>
+
+                                        <a
+                                            href={`https://wa.me/5588988847746?text=${encodeURIComponent("Olá! tenho interesse no plano " + item.periodo)}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={`btn btn-block ${item.corBotao} border-none text-white uppercase italic font-black`}
+                                        >
+                                            Comprar
+                                        </a>
+
                                     </div>
                                 </div>
                             </div>

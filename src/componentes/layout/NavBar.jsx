@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react"; // Adicionado useRef
 import minhaImg from "../../assets/img/logo.png";
-import { House, BookOpen, Phone, X, Menu } from 'lucide-react';
+import { House, BookOpen, Phone, X, Menu, Leaf } from 'lucide-react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 function HomeNavBar() {
@@ -57,7 +57,7 @@ function HomeNavBar() {
         { name: "INÍCIO", icon: <House size={18} />, to: "/#home" },
         { name: "PLANOS", icon: <BookOpen size={18} />, to: "/planos" },
         { name: "CONTATO", icon: <Phone size={18} />, to: "/#contato" },
-        { name: "NUTRIÇÃO", icon: <Phone size={18} />, to: "/Nutricao" }
+        { name: "NUTRIÇÃO", icon: <Leaf size={18} />, to: "/Nutricao" }
     ]
     return (
         <header
