@@ -56,9 +56,9 @@ function HomeNavBar() {
     const navLinks = [
         { name: "INÍCIO", icon: <House size={18} />, to: "/#home" },
         { name: "PLANOS", icon: <BookOpen size={18} />, to: "/planos" },
-        { name: "CONTATO", icon: <Phone size={18} />, to: "/#contato" }
-    ];
-
+        { name: "CONTATO", icon: <Phone size={18} />, to: "/#contato" },
+        { name: "NUTRIÇÃO", icon: <Phone size={18} />, to: "/Nutricao" }
+    ]
     return (
         <header
             style={{ zIndex: 9999, position: 'fixed', top: 0, width: '100%' }}

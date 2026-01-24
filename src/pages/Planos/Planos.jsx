@@ -11,7 +11,7 @@ function Planos() {
             corBorda: "border-orange-500",
             corBotao: "bg-orange-500",
             corTexto: "text-orange-500",
-            beneficios: ["30 Dias de acesso", "Acesso total", "Avaliação Fisica","Gypass"]
+            beneficios: ["30 Dias de acesso", "Acesso total", "Avaliação Fisica","Gympass"]
         },
         {
             periodo: "Quinzenal",

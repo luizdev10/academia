@@ -5,14 +5,14 @@ function Contato() {
     {
       nome: "WhatsApp",
       icon: <MessageCircle size={20} />,
-      link: "https://wa.me/seunumeroaqui",
+      link: "https://api.whatsapp.com/send?1=pt_BR&phone=5588988847746",
       corHover: "hover:bg-green-600 hover:border-green-600",
       estilo: "border-green-500 text-green-500"
     },
     {
       nome: "Instagram",
       icon: <Instagram size={25} />,
-      link: "https://instagram.com/seu_perfil",
+      link: "https://www.instagram.com/academiasaulofitness/",
       // Usando aquele gradiente do Instagram que criamos!
       corHover: "hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:border-transparent",
       estilo: "border-pink-500 text-pink-500"
@@ -20,7 +20,7 @@ function Contato() {
     {
       nome: "Facebook",
       icon: <Facebook size={20} />,
-      link: "https://facebook.com/suapagina",
+      link: "https://www.facebook.com/academiasaulofitness",
       corHover: "hover:bg-blue-600 hover:border-blue-600",
       estilo: "border-blue-500 text-blue-500"
     }

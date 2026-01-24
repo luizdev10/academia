@@ -5,6 +5,7 @@ import IntroHome from "./pages/Home/IntroHome";
 import Atividades from "./pages/Home/Atividades";
 import Contato from "./pages/Home/Contato";
 import Planos from "./pages/Planos/Planos";
+import Nutri from "./pages/Nuticao/Nutricao";
 
 
 
@@ -29,6 +30,7 @@ function App() {
           } />
 
           <Route path="/planos" element={<Planos />} />
+          <Route path="/Nutricao" element={<Nutri />} />
         
       
           <Route path="*" element={<Navigate to="/" />} />
