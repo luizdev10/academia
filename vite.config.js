@@ -13,7 +13,6 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/academia/",
   build: {
     cssMinify:"esbuild",
     minify:"esbuild"

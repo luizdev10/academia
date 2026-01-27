@@ -11,7 +11,7 @@ import Nutri from "./pages/Nuticao/Nutricao";
 
 function App() {
   return (
-    <BrowserRouter basename=''>
+    <BrowserRouter>
       <div className="w-full min-h-screen bg-zinc-950">
         <NavBar />
 
