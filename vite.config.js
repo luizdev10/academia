@@ -15,7 +15,8 @@ export default defineConfig({
   },
   base: "/academia/",
   build: {
-    outDir: 'docs'
+    cssMinify:"esbuild",
+    minify:"esbuild"
   },
   define: {
     'process.env': {} 
