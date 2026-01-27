@@ -50,7 +50,7 @@ const Nutricao = () => {
               <a href={whatsappLink} className="btn bg-orange-500 hover:bg-orange-200 border-none text-zinc-950 font-black uppercase px-8 shadow-lg shadow-emerald-500/20">
                 Agendar Consulta
               </a>
-              <a href="#metodologia" className="btn btn-outline border-zinc-700 text-zinc-300 hover:bg-zinc-900 uppercase">
+              <a href="#pilares" className="btn btn-outline border-zinc-700 text-zinc-300 hover:bg-zinc-900 uppercase">
                 Saiba Mais
               </a>
             </div>
@@ -82,8 +82,8 @@ const Nutricao = () => {
             <div className=" w-40 h-2 bg-amber-600 rounded mt-3 mb-4 md:w-80"></div>
           </div>
 
-          {/* Adicionei 'grid md:grid-cols-3' e 'gap-6' aqui */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mx-auto mt-10">
+          
+          <div id="pilares" className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mx-auto mt-10">
             {pilaresNutricao.map((item, id) => (
               <div key={id} className="bg-zinc-900 rounded-2xl p-8 border border-zinc-800 hover:border-orange-500/30 transition-all">
                 <div className={`w-12 h-12 ${item.bg} ${item.cor} flex justify-center items-center rounded-full mb-6`}>
@@ -128,8 +128,8 @@ const Nutricao = () => {
           </div>
           <div>
             <div className='mt-25'>
-              <a href={whatsappLink} className="uppercase p-4 rounded shadow-lg shadow-white/30  bg-orange-500  hover:bg-orange-400 ">
-                fale conosco
+              <a href={whatsappLink} className="uppercase font-black p-4 rounded shadow-lg shadow-white/30  bg-orange-500  hover:bg-orange-400 ">
+                fale com a gente!!
               </a>
             </div>
           </div>
