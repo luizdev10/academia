@@ -10,7 +10,6 @@ function HomeNavBar() {
     const navigate = useNavigate();
     const location = useLocation();
 
-    // Lógica para detectar scroll e mudar cor do header
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
@@ -19,10 +18,9 @@ function HomeNavBar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    // FECHAR AO CLICAR FORA: Detecta cliques fora da área do menu
     useEffect(() => {
         function handleClickOutside(event) {
-            // Se o menu está aberto e o clique NÃO foi dentro do menuRef
+
             if (menuAberto && menuRef.current && !menuRef.current.contains(event.target)) {
                 setMenuAberto(false);
             }
@@ -31,7 +29,6 @@ function HomeNavBar() {
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, [menuAberto]);
 
-    // Fecha o menu automaticamente quando mudar de página
     useEffect(() => {
         setMenuAberto(false);
     }, [location]);
@@ -72,7 +69,7 @@ function HomeNavBar() {
                     </span>
                 </Link>
 
-                {/* MENU DESKTOP */}
+                
                 <ul className="hidden md:flex items-center gap-8">
                     {navLinks.map((link) => (
                         <li key={link.name}>
@@ -87,7 +84,7 @@ function HomeNavBar() {
                     ))}
                 </ul>
 
-                {/* BOTÃO HAMBÚRGUER / FECHAR */}
+              
                 <button
                     className="md:hidden text-white p-2 focus:outline-none relative z-10002"
                     onClick={() => setMenuAberto(!menuAberto)}
@@ -96,14 +93,14 @@ function HomeNavBar() {
                 </button>
             </nav>
 
-            {/* OVERLAY DO MENU MOBILE */}
+            
             <div 
                 className={`
                     fixed inset-0 bg-black/95 flex flex-col items-center justify-center gap-8 transition-all duration-500 md:hidden
                     ${menuAberto ? "opacity-100 visible z-10000" : "opacity-0 invisible pointer-events-none"}
                 `}
             >
-                {/* div Ref: Esta é a área que "protege" o clique interno */}
+                
                 <div ref={menuRef} className="flex flex-col items-center gap-8 w-full">
                     {navLinks.map((link) => (
                         <Link
