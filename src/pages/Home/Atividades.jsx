@@ -25,9 +25,8 @@ function Atividades() {
   ];
 
   return (
-    <section className="bg-white py-20 px-6">
+    <section className="bg-zinc-600 py-20 px-6">
       <div className="container mx-auto">
-        {/* Título com detalhe em laranja */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-black text-zinc-900 uppercase italic">
             Nossos <span className="text-orange-600">Serviços</span>
@@ -57,7 +56,7 @@ function Atividades() {
                 {item.titulo}
               </h3>
               
-              <p className="mt-3 text-zinc-600 font-medium leading-relaxed max-w-250px">
+              <p className="mt-3 text-zinc-900 font-medium leading-relaxed max-w-250px">
                 {item.desc}
               </p>
             </div>
